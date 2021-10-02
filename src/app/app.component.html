@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-10">
+      <!--Event bind the navSearchResults array to the appSearchResults array-->
+      <app-navbar (navSearchResults)="this.appSearchResults = $event"></app-navbar>
+      <!--Property bind to the searchResults input in the app-search-results component-->
+      <app-search-results [searchResults]="this.appSearchResults"></app-search-results>
+    </div>
+  </div>
+</div>
